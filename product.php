@@ -6,8 +6,6 @@
         public $price;
         public $description;
 
-
-
         function __construct($img, $title, $price , $description){
             $this->img =$img;
             $this->title = $title;

@@ -1,8 +1,14 @@
 <?php 
     require __DIR__.'/product.php' ;
 
-    $dog = new Product('https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg', 'Nova Food' , 23.99.'$', 'Descrizione prodotto');
+    $dog = new Product('https://arcaplanet.vtexassets.com/arquivos/ids/245173/almo-nature-holistic-cane-adult-medium-pollo-e-riso.jpg', 'Nova Food' , 23.99.'$', 'Descrizione prodotto');
     var_dump($dog);
+
+
+    $stamp =[
+        $dog
+    ]
+
 ?>
 
 
@@ -31,7 +37,17 @@
 </head>
 
 <body>
-
+    <div class="">
+    
+        <?php foreach ($stamp as $index => $show) { ?>
+            <div class="img-container">
+                <img src="<?php echo $show->img; ?>" alt="">
+            </div>
+            <h4><?php echo $show->title; ?></h4>
+            <h6><?php echo $show->price; ?></h6>
+            <h6><?php echo $show->description; ?></h6>
+        <?php } ?>
+    </div>
 </body>
 
 </html>
