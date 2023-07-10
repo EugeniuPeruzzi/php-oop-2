@@ -5,11 +5,12 @@
 }
 
 .img-container {
-    width: 15%;
+    width: 100%;
 }
 
 
 img {
+    aspect-ratio: 1/1;
     width: 100%;
     object-fit: cover;
 }
