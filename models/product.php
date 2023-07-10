@@ -14,9 +14,5 @@
             $this->price = $price;
             $this->description = $description;
         }
-
-
     }
-
-
 ?>
