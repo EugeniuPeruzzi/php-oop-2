@@ -1,3 +1,20 @@
+<?php 
+    require __DIR__.'/product.php' ;
+
+    $dog = new Product('https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg', 'Nova Food' , 23.99.'$', 'Descrizione prodotto');
+    var_dump($dog);
+?>
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 
